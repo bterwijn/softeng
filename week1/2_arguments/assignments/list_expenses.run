@@ -1,0 +1,1 @@
+python expenses_cli.py expenses.csv list

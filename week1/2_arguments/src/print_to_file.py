@@ -1,0 +1,1 @@
+print("hello", "blue", "planet", file=open("hello.txt", "w"), flush=True)
