@@ -38,7 +38,8 @@ def test_question5():
     assert fixedhash(comb.question5()) == "060fc3a6988494d8e218c47717e682bee5da91a2d4841490b5f3b52ba8a679f2"
 
 def test_question6():
-    assert fixedhash(comb.question6()) == "1f754da69170e2714c5e0d1c8671c7d1fbfa132c1c6bd16532cf0d31049f8b8a"
+    assert (fixedhash(comb.question6()) == "1f754da69170e2714c5e0d1c8671c7d1fbfa132c1c6bd16532cf0d31049f8b8a" or  # 325 typo
+            fixedhash(comb.question6()) == "ccf73fa2e1b45fec5b84bcbc5b97047f9b0ed6e5379d9e4b07768a59e6d23151" )  # 425
 
 def test_question7():
     assert fixedhash(comb.question7()) == "19f27f9a065c016b1bc3238d240f1b24c68ff3d8e646e298d3e6f3f0047033b1"
