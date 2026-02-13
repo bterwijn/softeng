@@ -22,8 +22,8 @@ find "$WEEK" -type d -name assignments -exec \
 ## If this fails use:
 # zip -r $ZIP_FILE ./$WEEK
 
-if [ -f "$ZIP_FILE" ] && [ "$(stat -c %s -- "$ZIP_FILE")" -gt 5000000 ]; then
-  echo "The '$ZIP_FILE' is larger than 5MB, see if you can remove some files from '$WEEK' that are not needed for grading and remake this file."
+if [ -f "$ZIP_FILE" ] && [ "$(stat -c %s -- "$ZIP_FILE")" -gt 10000000 ]; then
+  echo "The '$ZIP_FILE' is larger than 10MB, see if you can remove some files from '$WEEK' that are not needed for grading and remake this file."
 fi
 
 if [ -f "$ZIP_FILE" ]; then
