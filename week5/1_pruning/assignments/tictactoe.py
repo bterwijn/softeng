@@ -67,10 +67,12 @@ class TicTacToe(Game_Abstract):
     def _get_win_diagonal(self, move):
         value = self[move]
         if move[0] == move[1]:  # main diagonal
-            return self.board[0: :self.size+1] == [value] * self.size
-        elif move[0] + move[1] == self.size - 1:  # anti-diagonal
-            return (self.board[self.size-1:self.size*self.size-1:self.size-1] == 
-                    [value] * self.size)
+            if self.board[0: :self.size+1] == [value] * self.size:
+                return True
+        if move[0] + move[1] == self.size - 1:  # anti-diagonal
+            if (self.board[self.size-1:self.size*self.size-1:self.size-1] == 
+                    [value] * self.size):
+                return True
         return False
     
     def get_win_player(self, move):
