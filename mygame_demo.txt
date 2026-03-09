@@ -1,0 +1,23 @@
+
+Volg deze instructie om een multi-player spel over het netwerk te spelen.
+
+Installeer eerst de nodige Python packages met:
+
+  pip install pygame zmq
+
+
+Ga naar de 'mygame_server' met:
+
+  cd ./week6/2_mygame/src/client_server/mygame_server/
+
+
+Om met de game-server te connecten is de juist PORT nodig, deze wordt gegeven op het bord. Kies jouw NAAM in het spel zonder spaties, kies bv je voornaam.
+
+Run nu de game-client met:
+
+  python mygame_client.py <NAAM> <PORT> forward-server.science.uva.nl
+
+
+Wil je nog een speler toevoegen? Run dan een tweede game-client in deze directory met NAAM2 met:
+
+  python mygame_client.py <NAAM2> <PORT> forward-server.science.uva.nl
