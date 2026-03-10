@@ -1,0 +1,25 @@
+% LaTeX-template for FNWI exams (v2: January 2014),
+% made by Jolien Kerssens (jolien.kerssens@student.uva.nl
+%
+% package-options are "dutch" (standard is English) and "multipleChoice" (standard is open).
+%
+% Please do not change the document class or the margin sizes of the document.
+%
+
+\RequirePackage{kvoptions-patch}
+\documentclass[a4paper]{article}
+
+\usepackage[
+    courseTitle = Software Engineering,
+    progTitle = Bachelor Kunstmatige Intelligentie,
+    examType = Eindtentamen,
+    examDate = {21 oktober 2013},
+    examTime = 10.00-13.00,
+    toolsAllowed = {kladpapier},
+    numPages = 3,
+    numQuestions = 5,
+    maxPoints = 100, dutch]{FNWIexam}
+\begin{document}
+\makeFirstPage
+Exam
+\end{document}
